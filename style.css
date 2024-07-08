@@ -1,0 +1,147 @@
+*:root{
+    --Primary:#ffffff;
+    --LightBlue:#F3F5FC;
+    --MainText:#0A3871;
+    --Gray:#D8DFE8;
+    --Gray500:#343A40;
+    --Gray400:#495057;
+    --FontPrimary:'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--LightBlue);
+    font-family:var(--FontPrimary);
+    width: 100vw;
+}
+.container{
+    margin: 24px 16px 40px 16px;
+    width: auto
+    
+}
+
+.container__main_section{
+    padding-top: 80px; 
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+}
+.container__main__section__input{
+    width: 100%;
+    height: 80%; 
+    border: none;
+    outline: none;
+    font-size: 32px;
+    background-color: var(--LightBlue);
+    color: var(--MainText);
+    resize: none; 
+    overflow-y: hidden; 
+}
+.container__main__section__input::placeholder{
+    color: var(--MainText);
+}
+.alert{
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.alert__text{
+    color: var(--Gray400);
+    font-size: 12px;
+}
+
+.container__main_section__button{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+.container__main_section__button button{
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+.button__Encriptar{
+    background-color: var(--MainText);
+    border: none;
+    color: var(--Primary);
+}
+.button__Desencriptar{
+    background-color: var(--LightBlue);
+    border-color: var(--MainText);
+    color:var(--MainText);
+
+}
+.container__second_section{
+    padding: 32px;
+    background-color: var(--Primary);
+    border-radius: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow:  5px 20px 20px var(--Gray);
+}
+.second_section__text{
+    color: var(--Gray500);
+    font-size: 24px;
+    font-weight: bold;
+   
+
+}
+.second_section__input{
+    color: var(--Gray400);
+    font-size: 16px;
+    padding: 0 16px;
+    line-height: 30px;
+}
+
+.container__second_section__avatar{
+    display: none;
+}
+@media(min-width:768px){
+    .container{
+        margin: 40px;
+    }
+    .container__main_section__button{
+        flex-direction:row;
+    }
+}
+@media(min-width:1440px){
+    .container{
+        margin: 0px;
+        padding: 40px;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .logo{
+        position: absolute;
+    }
+    .container__second_section__avatar{
+        display: inline;
+    }
+    .container__main_section{
+        position: relative;
+        width: 100%;
+        padding-left: 240px;
+    }
+    
+    .container__main_funtion__section{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+    }
+    .container__main_section__button button{
+        width: 328px;
+    }
+}
