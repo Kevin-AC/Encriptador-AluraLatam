@@ -13,23 +13,26 @@
     <main class="container" >
         <img class="logo" src="./assets/Top.svg" alt="Alura-logo">
             <section class="container__main_section">
-                <textarea class="container__main__section__input" placeholder="Ingrese el texto aqui"  name="" id=""></textarea>
+                <textarea id="InputText" class="container__main__section__input" placeholder="Ingrese el texto aqui"  name=""></textarea>
                 <div class="container__main_funtion__section">
                     <div class="alert">
                         <img src="./assets/Group.png" alt="Alert-Icon">
                         <p class="alert__text">Solo letras minúsculas y sin acentos</p>
                     </div>
                     <div class="container__main_section__button">
-                        <button class="button__Encriptar">Encriptar</button>
-                        <button class="button__Desencriptar">Desencriptar</button>
+                        <button id="buttonEcriptar" class="button__Encriptar">Encriptar</button>
+                        <button id="buttonDesencriptar" class="button__Desencriptar">Desencriptar</button>
                     </div>
                 </div>
             </section>
             <section class="container__second_section">
                 <img class="container__second_section__avatar" src="./assets/Muñeco.png" alt="Muñeco">
                 <p class="second_section__text">Ningún mensaje fue encontrado</p>
-                <p class="second_section__input">Ingresa el texto que desees encriptar o desencriptar.</p>
-            </section>
+                <p id="resultText" class="second_section__result">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <textarea placeholder="Ingresa el texto que desees encriptar o desencriptar." name="" class="second_section__input" id="Encriptador"></textarea>
+                <button id="buttonCopiar" class="second__section__copi">Copiar</button>
+            </section> 
+            <script src="./app.js"></script>
     </main>
 </body>
 </html>

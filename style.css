@@ -71,11 +71,13 @@ body{
     background-color: var(--MainText);
     border: none;
     color: var(--Primary);
+    cursor: pointer;
 }
 .button__Desencriptar{
     background-color: var(--LightBlue);
     border-color: var(--MainText);
     color:var(--MainText);
+     cursor: pointer;
 
 }
 .container__second_section{
@@ -89,17 +91,41 @@ body{
     box-shadow:  5px 20px 20px var(--Gray);
 }
 .second_section__text{
+    
     color: var(--Gray500);
     font-size: 24px;
     font-weight: bold;
    
 
 }
+.second_section__result{
+    font-size: 24px;
+    color: var(--Gray400);
+    text-align: justify;
+    display: none;
+}
+.second__section__copi{
+    background-color: var(--LightBlue);
+    border-color: var(--MainText);
+    color:var(--MainText);
+    cursor: pointer;
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    display: none;
+}
 .second_section__input{
+    
     color: var(--Gray400);
     font-size: 16px;
     padding: 0 16px;
     line-height: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    resize: none; 
+    overflow-y: hidden; 
 }
 
 .container__second_section__avatar{
