@@ -29,11 +29,11 @@ body{
     padding-top: 80px; 
     display: flex;
     flex-direction: column;
-    gap: 13rem;
+    
 }
 .container__main__section__input{
+    height: 340px;
     width: 100%;
-    height: 80%; 
     border: none;
     outline: none;
     font-size: 32px;
@@ -107,6 +107,8 @@ body{
     color: var(--Gray400);
     text-align: justify;
     display: none;
+    overflow-wrap: break-word;
+   
 }
 .second__section__copi{
     background-color: var(--LightBlue);
@@ -152,6 +154,9 @@ body{
     }
 }
 @media(min-width:1440px){
+    .second__section__copi{
+        min-width: 344px;
+    }
     .container{
         margin: 0px;
         padding: 40px;
@@ -163,6 +168,9 @@ body{
     }
     .logo{
         position: absolute;
+    }
+    .container__main__section__input{
+        height: 80%;
     }
     .container__second_section__avatar{
         display: inline;
@@ -181,5 +189,9 @@ body{
     }
     .container__main_section__button button{
         width: 328px;
+    }
+    
+    .second_section__result{
+        width: 400px;
     }
 }
