@@ -2,7 +2,7 @@ const buttonEncriptar = document.getElementById('buttonEcriptar')
 const buttonDesencriptar = document.getElementById('buttonDesencriptar')
 const butttonCopiar = document.getElementById('buttonCopiar')
 const resultText = document.getElementById('second___section__resultText')
-
+const avatar = document.getElementById('avatar')
 const messaje__paragraph__text = document.getElementById('messaje__paragraph__text')
 const error = document.getElementById('error')
 const inputText = document.getElementById('InputText')
@@ -45,6 +45,7 @@ function Ocultar(){
     resultText.style.display = 'block'
     messaje__paragraph__text.style.display = 'none'
     paragraph__result.style.display = 'none'
+    avatar.style.display = 'none'
 }
 
 function encriptador(text){
