@@ -39,6 +39,10 @@ buttonDesencriptar.addEventListener('click',()=>{
     desencriptar(inputValue)
 })
 
+butttonCopiar.addEventListener('click',()=>{
+    navigator.clipboard.writeText(resultText.innerHTML)
+})
+
 
 function Ocultar(){
     butttonCopiar.style.display = 'block'
