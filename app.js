@@ -56,7 +56,7 @@ function encriptador(text){
 
 function desencriptar(text){
     for(letra in reglas){
-        valorDesencriptado=text=text.replaceAll(reglas[letras],letra)
+        valorDesencriptado=text=text.replaceAll(reglas[letra],letra)
 
     }
     resultText.innerText=valorDesencriptado
